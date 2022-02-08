@@ -1,7 +1,7 @@
 #!/bin/bash
 
-read -p "Enter the month: " month
-read -p "Enter the date: " date
+read -p "Enter the month : " month
+read -p "Enter the date : " date
 if [[ ( $month -eq 3 ) && ( $date -ge 20 ) && ( $date -le 31) ]]
 then
 	echo "True"
