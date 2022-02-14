@@ -5,7 +5,7 @@ max=100
 echo "Five random three digit values are : "
 for ((a=0; a<5; a++))
 do
-	r=$(( 100 + RANDOM % 899))
+	r=$(( 100 + RANDOM % 900))
 	echo $r
 	if [ $r -le $min ]
 	then

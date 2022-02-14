@@ -13,19 +13,19 @@ case $num in
 	2)
 		echo " ... Feet to Meter conversion ... "
 		read -p "Enter the value in Feet : " feet
-		me=$(( feet*0.3 ))
+		me=$(( feet*6/20 ))
 		echo $feet " Feet = "$me " Meter"
 				;;
 	3)
 		echo " ... Inch to Feet conversion ... "
 		read -p "Enter the value in Inch : " inch
-		feet=$(( inch*0.083 ))
+		feet=$(( inch*83/1000 ))
 		echo $inch " inch = "$feet " feet"
 				;;
 	4)
 		echo " ... Meter to Feet conversion ... "
 		read -p "Enter the value in Meter : " me
-		feet=$(( me*3.2 ))
+		feet=$(( me*16/5 ))
 		echo $me " meter = "$feet" feet"
 				;;
 	*)

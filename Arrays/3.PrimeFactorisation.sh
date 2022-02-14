@@ -1,7 +1,6 @@
-#! /bin/bash
+#! /bin/bash -x
 
-echo enter no:-
-read num
+read -p "Enter the number: " num
 count=0
 
 for (( i=2;i<=num; i++ ))

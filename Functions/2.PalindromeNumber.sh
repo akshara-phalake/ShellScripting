@@ -1,4 +1,4 @@
-#! /bin/bash/
+#! /bin/bash/ -x
 
 function isPallindrome() {
 echo "Enter the number"

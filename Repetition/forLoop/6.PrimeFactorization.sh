@@ -1,23 +1,20 @@
 #!/bin/bash
 
 read -p " Enter the number: " n
-flag=0
-for (( i=2; i<=$n; i++ ))
-do
-	if [[ $n%$i -eq 0 ]]
-	then
-	flag=0
-	for (( j=2; j<$i; j++ ))
-	do
-		if [[ $i%$j -eq 0 ]]
+if($n%2==0)
 		then
-		flag=1
-	   fi
-	done
-	fi
-
-	if [[ $flag -eq 0 ]]
-	then
-	echo ${i} "is a prime factor of " $n
-	fi
+        echo 2," ";
+        $n=$n / 2;
+		fi
+for (( $i = 3; $i <= sqrt($n); $i = $i + 2 ))
+do
+	while ($n % $i == 0)
+       do
+            echo $i," ";
+            $n = $n / $i;
+     done
 done
+if ($n > 2)
+then
+	echo $n," "
+fi

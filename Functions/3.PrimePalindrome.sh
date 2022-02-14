@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/bash -x
 
 function isPallindrome() {
 temp=$1
@@ -27,9 +27,9 @@ done
 
 if (($count==2))
 then
-	echo "The $checkNumber is prime number"
+	echo "$checkNumber is prime number"
 else
-	echo "The $checkNumber is not an prime number"
+	echo "$checkNumber is not a prime number"
 fi
 
 }
